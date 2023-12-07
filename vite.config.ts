@@ -9,6 +9,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 export default defineConfig(({ mode, command }) => {
   const env = loadEnv(mode, process.cwd())
   return {
+    base: './',
     plugins: [
       vue(),
       setupExtend(),
