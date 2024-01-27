@@ -6,21 +6,23 @@ import setupExtend from 'vite-plugin-vue-setup-extend'
 import AutoImport from 'unplugin-auto-import/vite'
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode, command }) => {
-  const env = loadEnv(mode, process.cwd())
+export default defineConfig(({ mode }) => {
+  // eslint-disable-next-line node/prefer-global/process
+  loadEnv(mode, process.cwd())
   return {
     plugins: [
       vue(),
       setupExtend(),
       createSvgIconsPlugin({
         // 指定需要缓存的图标文件夹
+        // eslint-disable-next-line node/prefer-global/process
         iconDirs: [path.resolve(process.cwd(), 'src/assets/icons/svg')],
         // 指定symbolId格式
         symbolId: 'icon-[dir]-[name]',
       }),
       AutoImport({
         include: [/\.[tj]sx?$/, /\.vue$/, /\.vue\?vue/, /\.md$/],
-        imports: [ 'vue', 'vue-router' ],
+        imports: ['vue', 'vue-router'],
         eslintrc: {
           enabled: false, // 默认false, true启用。生成一次就可以，避免每次工程启动都生成
           filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
@@ -40,7 +42,7 @@ export default defineConfig(({ mode, command }) => {
     server: {
       port: 3000,
       host: true,
-      open: true
+      open: true,
     },
   }
 })

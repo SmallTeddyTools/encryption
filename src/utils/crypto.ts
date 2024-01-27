@@ -4,13 +4,13 @@ import CryptoJS from 'crypto-js'
 const keyHex: any = CryptoJS.enc.Utf8.parse('xe3vk9tFTMjxvxFwE6Lk7yf0pFU08T6V')
 
 function trim(str) {
-  return str.replace(/^\s+|\s+$/g, '');
+  return str.replace(/^\s+|\s+$/g, '')
 }
 
 /**
  * @description AES 加密
- * @param {string} data
- * @returns {any}
+ * @returns {string} encryptText
+ * @param encryptText
  */
 // 函数用于使用DES加密文本
 function encryptByDES(encryptText: string): string {
@@ -29,8 +29,8 @@ function encryptByDES(encryptText: string): string {
 
 /**
  * @description AES 解密
- * @param {any} decryptText
- * @returns {any}
+ * @param {string} decryptText
+ * @returns {string} decryptText
  */
 // 使用DES解密函数，解密文本
 function decryptByDES(decryptText: string): string {
