@@ -10,6 +10,7 @@ export default defineConfig(({ mode }) => {
   // eslint-disable-next-line node/prefer-global/process
   loadEnv(mode, process.cwd())
   return {
+    base: './encryption/',
     plugins: [
       vue(),
       setupExtend(),
