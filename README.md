@@ -1,12 +1,13 @@
 # Encryption and decryption of web applications
 
-## 1、Screen
+## Screen
 <img title="DemoWavy"  src="./src/assets/home.png" width="100%"></img>
 
+## Test1
+<img title="Encryption" src='./src/assets/1.png' width="100%" />
 
-## 2、Encryption
-<img title="Encryption" src='./src/assets/encryption.png' width="100%"></img>
+## Test2
+<img title="Decryption" src='./src/assets/2.png' width="100%" />
 
-
-## 3、Decryption
-<img title="Decryption" src='./src/assets/decryption.png' width="100%"></img>
+## Test3
+<img title="Decryption" src='./src/assets/3.png' width="100%" />

@@ -73,7 +73,7 @@ function getDecryption(str) {
     resize: none;
     background: transparent;
     height: 100% !important;
-    font-family: "Monofur Nerd Font";
+    font-family: "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,monospace";
     font-size: 20px;
     color: #fff;
 }
