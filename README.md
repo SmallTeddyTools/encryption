@@ -1,13 +1,25 @@
 # Encryption and decryption of web applications
 
 ## Screen
-<img title="DemoWavy"  src="./src/assets/home.png" width="100%"></img>
 
-## Test1
-<img title="Encryption" src='./src/assets/1.png' width="100%" />
+### Web Screen
+![web-screen](./src/assets/web-screen.png)
 
-## Test2
-<img title="Decryption" src='./src/assets/2.png' width="100%" />
+### Mobile Screen
+![mobile-screen](./src/assets/mobile-screen.png)
 
-## Test3
-<img title="Decryption" src='./src/assets/3.png' width="100%" />
+## Test
+
+### Web Test
+![web-test](./src/assets/web-test.png)
+
+### Mobile Test
+![mobile-test](./src/assets/mobile-test.png)
+
+## Todo List
+- [x] Encryption and decryption function
+- [x] Mobile adaptation
+- [ ] Diy encryption algorithm function
+- [ ] Replication function
+- [ ] Select the encryption mode function
+
